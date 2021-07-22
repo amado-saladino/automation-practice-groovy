@@ -1,0 +1,6 @@
+driver:
+  browser: chrome
+uri:
+  web: http://automationpractice.com/index.php
+wait:
+  default_wait: 30
