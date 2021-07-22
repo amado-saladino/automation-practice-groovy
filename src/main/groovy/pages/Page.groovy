@@ -38,7 +38,7 @@ abstract class Page {
         element.sendKeys(text)
     }
     void selectDropdownItem(WebElement comboElement, String option) {
-        WaitUtils.waitVisibilityOf(comboElement, TIME_OUT)
+        //WaitUtils.waitVisibilityOf(comboElement, TIME_OUT)
         new Select(comboElement).selectByVisibleText(option)
     }
     void selectDropdownItem(WebElement comboElement, int index) {
