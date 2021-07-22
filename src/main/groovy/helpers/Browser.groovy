@@ -52,6 +52,8 @@ class Browser {
         if (headless) {
             options.setHeadless(true)
             options.addArguments("window-size=2000,1080")
+            options.addArguments("--no-sandbox")
+            options.addArguments("--disable-dev-shm-usage")
         }
         options
     }

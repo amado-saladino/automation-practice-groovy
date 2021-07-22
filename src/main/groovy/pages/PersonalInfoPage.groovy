@@ -2,9 +2,9 @@ package pages
 
 import helpers.ConfigReader
 import helpers.WaitUtils
+import org.openqa.selenium.By
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.support.FindBy
-import org.openqa.selenium.By
 
 class PersonalInfoPage extends Page {
     @FindBy(id= "customer_firstname")

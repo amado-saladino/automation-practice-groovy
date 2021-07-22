@@ -32,7 +32,13 @@ docker build -t test .
 ## Run Tests
 
 ```shell
-docker run --name=test -v `pwd`:/app -v gradle-repo:/root/.gradle/caches/modules-2/files-2.1 -uroot test
+docker run --name=test -v `pwd`:/app -v gradle-repo:/root/.gradle/caches/modules-2/files-2.1 -u root test
+```
+
+or
+
+```shell
+docker run --name=test -v `pwd`:/app -v gradle-repo:/root/.gradle/caches/modules-2/files-2.1 -u root amadosaladino/selenium-gradle
 ```
 
 ## Test Report
